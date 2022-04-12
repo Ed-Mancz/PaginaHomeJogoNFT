@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <title>Halloween Souls</title>
+</head>
+<body>
+    <div class="shadow">
+
+        <h1 class="h1first">Profit Calculator</h1>
+        <div class="shadowrarities">
+            <div class="divrarities">
+                    <div class="mintbtn" onclick="mint()">Mint 10!</div>
+                    <div class="mintbtn" id="cleanbtn" onclick="clean()">Clean!</div>
+                    <div id="totsoul">0</div>
+                
+                <ul class="ulrarities">
+                    <li class="itemli">Common</li>
+                    <li class="itemli">Rare</li>
+                    <li class="itemli">Super Rare</li>
+                    <li class="itemli">Epic</li>
+                    <li class="itemli">Legendary</li>
+                </ul>
+                <ul class="ulrarities" id="chance">
+                    <li class="itemli">81.27%</li>
+                    <li class="itemli">10.28%</li>
+                    <li class="itemli">5.63%</li>
+                    <li class="itemli">2.13%</li>
+                    <li class="itemli">0.69%</li>
+                </ul>
+                <ul class="ulamount">
+                    <li><img src="../images/left-arrow.png" alt="" class="arrow" id="arrowleft" onclick="leftCommon()">
+                        <span class="amount" id="numCommon">0</span>
+                        <img src="../images/right-arrow.png" alt="" class="arrow" id="arrowright" onclick="rightCommon()"></li>
+                    <li><img src="../images/left-arrow.png" alt="" class="arrow" id="arrowleft" onclick="leftRare()">
+                        <span class="amount" id="numRare">0</span>
+                        <img src="../images/right-arrow.png" alt="" class="arrow" id="arrowright" onclick="rightRare()"></li>
+                    <li><img src="../images/left-arrow.png" alt="" class="arrow" id="arrowleft" onclick="leftSuper()">
+                        <span class="amount" id="numSuper">0</span>
+                        <img src="../images/right-arrow.png" alt="" class="arrow" id="arrowright" onclick="rightSuper()"></li>
+                    <li><img src="../images/left-arrow.png" alt="" class="arrow" id="arrowleft" onclick="leftEpic()">
+                        <span class="amount" id="numEpic">0</span>
+                        <img src="../images/right-arrow.png" alt="" class="arrow" id="arrowright" onclick="rightEpic()"></li>
+                    <li><img src="../images/left-arrow.png" alt="" class="arrow" id="arrowleft" onclick="leftLegen()">
+                        <span class="amount" id="numLegen">0</span>
+                        <img src="../images/right-arrow.png" alt="" class="arrow" id="arrowright" onclick="rightLegen()"></li>
+                </ul>
+                <div class="checkbtn" onclick="check()">Check</div>
+            </div>
+            
+
+            
+        </div>
+
+        <div class="shadowresult">
+            <div class="result">
+                <div class="cost">
+                    <h1 class="h1sub">Cost For Souls</h1>
+                    
+                    
+                    <ul class="ulresult">
+                        <h2 class="h2sub">Day</h2>
+                        <li class="itemresult"><span>1</span></li>
+                        <li class="itemresult"><span>7</span></li>
+                        <li class="itemresult"><span>30</span></li>
+                    </ul>
+
+                    
+                    <ul class="ulresult">
+                        <h2 class="h2sub">Candy</h2>
+                        <li class="itemresult"><span id="resultcost1">0</span></li>
+                        <li class="itemresult"><span id="resultcost7">0</span></li>
+                        <li class="itemresult"><span id="resultcost30">0</span></li>
+                    </ul>
+                    </div>
+                    
+                    <div class="profit">
+                    
+                    <h1 class="h1sub">Profit</h1>
+                    
+                    <ul class="ulresult">
+                        <h2 class="h2sub">Day</h2>
+                        <li class="itemresult"><span>1</span></li>
+                        <li class="itemresult"><span>7</span></li>
+                        <li class="itemresult"><span>30</span></li>
+                    </ul>
+
+                    
+                    <ul class="ulresult">
+                        <h2 class="h2sub">Candy</h2>
+                        <li class="itemresult"><span id="resultprofit1">0</span></li>
+                        <li class="itemresult"><span id="resultprofit7">0</span></li>
+                        <li class="itemresult"><span id="resultprofit30">0</span></li>
+                    </ul>
+                    </div>
+            </div>
+        </div>
+
+        <div class="nftitens">
+            <img src="../images/left-arrow.png" class="arrowleftnft" onclick="toleft()" alt="">
+            <img src="../images/test-01-a.png" id="nftleft" class="imgnft" alt="">
+            <img src="../images/test-01-b.png" id="nftmid" class="imgnft" alt="">
+            <img src="../images/test-01-c.png" id="nftright" class="imgnft" alt="">
+            <img src="../images/right-arrow.png" class="arrowrightnft" onclick="toright()" alt="">
+            <br>
+            <ul class="ulcontrol" id="controlfirst">
+                <li class="li" id="li1"></li>
+            </ul>
+            <ul class="ulcontrol">
+                <li class="li" id="li2"></li>
+            </ul>
+                
+            <ul class="ulcontrol">
+                <li class="li" id="li3"></li>
+            </ul>
+                
+            <ul class="ulcontrol">
+                <li class="li" id="li4"></li>
+            </ul>
+                
+            
+        </div>
+    </div>
+    
+    <br>
+    <p class="pcontact">&copy;Halloween Souls 2021 - All Rights Reserved.</p>
+    <script src="script.js"></script>
+</body>
+</html>

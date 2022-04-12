@@ -1,0 +1,200 @@
+:root{
+    --yellow: #f6921d;
+    --black: #130912;
+    --lightpurple: #602749;
+    --gray: #606060;
+    --orange: #b14623;
+    --darkpurple: #3e1c33;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+}
+html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(0deg,#080408,#262626);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    font-family: 'enchanted', Arial, Helvetica, sans-serif;
+    letter-spacing: 1,3px;
+}
+.shadow{
+    position:relative;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    height: auto;
+    min-width: 1070px;
+    max-width: 1070px;
+    max-height: 600px;
+    background: linear-gradient(0deg,#080408,#262626);
+    border-radius: 20px;
+    text-align: center;
+    padding-bottom:100px;
+    padding-top: 145px;
+    background-size: 100% 100%;
+    
+}
+.shadow::before,
+.shadow::after
+{
+    content: '';
+    position:absolute;
+    top: -4px;
+    left: -4px;
+    background: linear-gradient(45deg,#080408,#020102,var(--black),var(--darkpurple),var(--lightpurple),var(--orange),var(--yellow),var(--yellow),var(--orange),var(--lightpurple),var(--darkpurple), var(--black), #080408,#020102);
+    background-size: 400%;
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+    z-index: -1;
+    animation: animate 20s linear infinite;
+    border-radius: 20px;
+}
+.shadow::after{
+    filter: blur(200px);
+}
+@keyframes animate{
+    0%
+    {
+        background-position: 0 0;
+    }
+    50%
+    {
+        background-position: 400% 0;
+    }
+    100%
+    {
+        background-position: 0 0;
+    }
+}
+
+
+.imglogo{
+    
+    display: inline-block;
+    max-width: 600px;
+    max-height: 600px;
+    margin-top: 60px;
+    text-align: center;
+    margin-bottom: 180px;
+    box-shadow: 2px 2px 20px var(--yellow);
+    transform: rotate(10deg);
+    
+}
+@keyframes loading {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@keyframes loading2 {
+	0% {
+		transform: rotate(360deg);
+	}
+	100% {
+		transform: rotate(0);
+	}
+}
+.imggear{
+    display: block;
+    max-width: 65px;
+    max-height: 65px;
+    text-align: center;
+    padding: 0;
+    margin: auto;
+    margin-top: 20px;
+    position: absolute;
+    left: calc(100% - 575px);
+    bottom: 60px;
+    animation: loading 2s linear infinite;
+}
+.imggear2{
+    display: block;
+    max-width: 50px;
+    max-height: 50px;
+    text-align: center;
+    padding: 0;
+    margin: auto;
+    margin-top: 20px;
+    position: absolute;
+    left: calc(100% - 515px);
+    bottom: 50px;
+    animation: loading2 2s linear infinite;
+}
+.imggear3{
+    display: block;
+    max-width: 35px;
+    max-height: 35px;
+    text-align: center;
+    padding: 0;
+    margin: auto;
+    margin-top: 20px;
+    position: absolute;
+    left: calc(100% - 535px);
+    bottom: 27px;
+    animation: loading 2s linear infinite;
+}
+
+@font-face {
+    font-family: 'enchanted';
+    src: url('fonts/Enchanted Land.otf') format('opentype');
+    font-weight: normal;
+    font-weight: normal;
+}
+
+.contact{
+    background-color: transparent;
+    display: inline-block;
+    height: auto;
+    margin-top: 5px;
+    margin-bottom: 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: -3;
+}
+.lcontact{
+    text-decoration: none;
+    color: white;
+}
+ul{
+    text-decoration: underline;
+
+    bottom: 0%;
+}
+.img-icon-contact{
+    margin: 0%;
+    padding: 0%;
+    padding-left: 10px;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+}
+.tcontact{
+    color: var(--yellow);
+    font-size: 3em;
+    padding-left: 20px;
+}
+.textcontact{
+    color: white;
+    font-size: 1.5em;
+    text-decoration: underline;
+    text-decoration-color: var(--lightpurple);
+}
+.pcontact{
+    text-decoration: none;
+    text-align: right;
+    padding: 0%;
+    margin: 0%;
+    color: white;
+    font-size: 1.5em;
+}
