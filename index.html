@@ -18,10 +18,8 @@
                 <a href="#img-bird" id="ham" class="hovermenu">GAMEPLAY</a>
                 <a href="#shadowline2" id="ham" class="hovermenu">CONTRACT</a>
                 <a href="#profbtn" id="ham" class="hovermenu">ROADMAP</a>
-                
+                <a id="LoginMetamask" class="LoginMetamask" onclick="login()">MetaMask Login <span id="userWallet"></span></a>
             </nav>
-            <audio src="music-theme/theme.mp3" id="background_audio" autoplay loop></audio>
-            <a href="#." class="mute-button" onclick="mute();"><img src="images/unmute.png" alt="?" id="img-audio"></a>
     </header>
 
     <div class="headerback">
@@ -109,6 +107,7 @@
                 <div class="divex">
                     <a href="#"><img src="images/dxlogo.png" alt="poocoin" class="imgex" id="imgpvt" style="max-width: 100px; max-height: 100px;"></a>
                 </div>
+                
                  <div class="buy" style="padding: 0%;">
                     <h2 id="contract">Buy soon in <h2 id="arrowcustom">↴</h2></h2>
                  </div>
@@ -136,7 +135,7 @@
                     <ul class="ulroad">
                         <li>Twitter Community</li>
                         <li class="liroad">Discord Community</li>
-                        <li class="liroad">Global Telegram channel</li>
+                        <li class="liroad">Telegram channel</li>
                         <li class="liroad">Website</li>
                     </ul>
                 </div>
@@ -182,6 +181,9 @@
         </section> 
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
+        type="application/javascript"></script>
+    <script src="metamask.js"></script>
     <script src="script.js"></script>
     <script>
         AOS.init();
